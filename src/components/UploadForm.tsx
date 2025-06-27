@@ -48,15 +48,15 @@ const UploadForm: React.FC<UploadFormProps> = ({ onDocumentParsed }) => {
         {...getRootProps()}
         className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-all duration-200 ${
           isDragActive
-            ? 'border-primary-500 bg-primary-50'
-            : 'border-gray-300 hover:border-primary-400 hover:bg-gray-50'
+            ? 'border-blue-500 bg-blue-50'
+            : 'border-gray-300 hover:border-blue-400 hover:bg-gray-50'
         }`}
       >
         <input {...getInputProps()} />
         
         <div className="flex flex-col items-center space-y-4">
-          <div className={`p-4 rounded-full ${isDragActive ? 'bg-primary-100' : 'bg-gray-100'}`}>
-            <Upload className={`w-8 h-8 ${isDragActive ? 'text-primary-600' : 'text-gray-600'}`} />
+          <div className={`p-4 rounded-full ${isDragActive ? 'bg-blue-100' : 'bg-gray-100'}`}>
+            <Upload className={`w-8 h-8 ${isDragActive ? 'text-blue-600' : 'text-gray-600'}`} />
           </div>
           
           <div>
