@@ -53,7 +53,7 @@ function App() {
                     </label>
                     <input
                       type="password"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                       placeholder="Enter your Granite API key"
                     />
                   </div>
@@ -63,7 +63,7 @@ function App() {
                     </label>
                     <input
                       type="password"
-                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary-500 focus:ring-primary-500"
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                       placeholder="Enter your Pinecone API key"
                     />
                   </div>
@@ -77,7 +77,7 @@ function App() {
                     <input
                       id="auto-process"
                       type="checkbox"
-                      className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
+                      className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
                     />
                     <label htmlFor="auto-process" className="ml-2 text-sm text-gray-700">
                       Auto-process uploaded documents
@@ -87,7 +87,7 @@ function App() {
                     <input
                       id="email-alerts"
                       type="checkbox"
-                      className="rounded border-gray-300 text-primary-600 focus:ring-primary-500"
+                      className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
                     />
                     <label htmlFor="email-alerts" className="ml-2 text-sm text-gray-700">
                       Email notifications for anomalies
@@ -112,7 +112,7 @@ function App() {
         } transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0`}>
           <div className="flex items-center justify-between h-16 px-6 border-b border-gray-200">
             <div className="flex items-center space-x-3">
-              <div className="bg-gradient-to-r from-primary-600 to-primary-700 p-2 rounded-lg">
+              <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-2 rounded-lg">
                 <Brain className="w-6 h-6 text-white" />
               </div>
               <span className="text-xl font-bold text-gray-900">ML Studio</span>
@@ -138,7 +138,7 @@ function App() {
                     }}
                     className={`w-full flex items-center space-x-3 px-4 py-3 rounded-lg text-left transition-colors ${
                       activeTab === tab.id
-                        ? 'bg-primary-100 text-primary-700 border-r-2 border-primary-600'
+                        ? 'bg-blue-100 text-blue-700 border-r-2 border-blue-600'
                         : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
                     }`}
                   >
