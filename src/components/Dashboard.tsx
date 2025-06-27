@@ -43,7 +43,7 @@ const Dashboard: React.FC = () => {
   if (statsLoading || alertsLoading) {
     return (
       <div className="flex items-center justify-center h-64">
-        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600"></div>
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
       </div>
     );
   }
@@ -51,9 +51,9 @@ const Dashboard: React.FC = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-xl p-6 text-white">
+      <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-6 text-white">
         <h1 className="text-3xl font-bold mb-2">ML Analytics Dashboard</h1>
-        <p className="text-primary-100">
+        <p className="text-blue-100">
           Monitor your document processing and AI performance metrics
         </p>
       </div>
