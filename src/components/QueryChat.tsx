@@ -140,13 +140,13 @@ const QueryChat: React.FC = () => {
             <div
               className={`max-w-[80%] rounded-lg p-4 ${
                 message.type === 'user'
-                  ? 'bg-primary-600 text-white'
+                  ? 'bg-blue-600 text-white'
                   : 'bg-gray-100 text-gray-900'
               }`}
             >
               <div className="flex items-start space-x-3">
                 <div className={`p-1 rounded-full ${
-                  message.type === 'user' ? 'bg-primary-700' : 'bg-gray-200'
+                  message.type === 'user' ? 'bg-blue-700' : 'bg-gray-200'
                 }`}>
                   {message.type === 'user' ? (
                     <User className="w-4 h-4" />
@@ -247,7 +247,7 @@ const QueryChat: React.FC = () => {
           <button
             onClick={handleSendMessage}
             disabled={!inputMessage.trim() || queryDocuments.isPending}
-            className="bg-primary-600 text-white p-3 rounded-lg hover:bg-primary-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="bg-blue-600 text-white p-3 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
           >
             <Send className="w-5 h-5" />
           </button>
